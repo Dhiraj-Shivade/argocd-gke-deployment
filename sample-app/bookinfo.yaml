@@ -178,7 +178,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: docker.io/istio/examples-bookinfo-reviews-v1:bad
+        image: docker.io/istio/examples-bookinfo-reviews-v1:review1
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
