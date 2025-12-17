@@ -4,5 +4,3 @@ metadata:
   name: test-demo
 spec:
   enabled: true
-status:
-  state: error
