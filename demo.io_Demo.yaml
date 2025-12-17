@@ -1,0 +1,13 @@
+health.lua: |
+  hs = {}
+  if obj.status ~= nil and obj.status.state == "ready" then
+    hs.status = "Healthy"
+    hs.message = "Demo CR is ready"
+  elseif obj.status ~= nil and obj.status.state == "error" then
+    hs.status = "Degraded"
+    hs.message = "Demo CR is in error"
+  else
+    hs.status = "Progressing"
+    hs.message = "Waiting for Demo to be ready"
+  end
+  return hs

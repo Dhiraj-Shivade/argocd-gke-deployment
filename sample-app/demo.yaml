@@ -1,0 +1,8 @@
+apiVersion: demo.io/v1
+kind: Demo
+metadata:
+  name: test-demo
+spec:
+  enabled: true
+status:
+  state: error
